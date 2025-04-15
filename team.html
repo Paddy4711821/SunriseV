@@ -2,120 +2,126 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team | Sunrise V</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunrise V | Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(180deg, #0f001a, #1a0033);
+      background: linear-gradient(135deg, #20002c, #cbb4d4);
       color: #fff;
-      padding: 20px;
     }
-    h1 {
+
+    header {
       text-align: center;
-      font-size: 2.5rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 2rem;
       color: #ff00ff;
     }
-    .role-section {
-      margin-top: 40px;
+
+    .team-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
     }
+
+    .role-section {
+      margin-bottom: 3rem;
+    }
+
     .role-title {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #00ffff;
       border-bottom: 2px solid #00ffff;
-      padding-bottom: 5px;
+      margin-bottom: 1rem;
     }
-    .member {
-      margin: 10px 0;
-      padding: 10px;
+
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .member-card {
       background: rgba(255, 255, 255, 0.05);
-      border-left: 4px solid #ff00ff;
-      border-radius: 6px;
+      border: 1px solid #ff00ff;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
     }
-    .member span {
-      display: block;
-      font-size: 1rem;
+
+    .member-card:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.1);
     }
-    .member .name {
+
+    .member-name {
       font-weight: bold;
-      font-size: 1.1rem;
-      color: #ffccff;
+      font-size: 1.2rem;
     }
+
+    .member-info {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
+      header {
+        font-size: 1.5rem;
       }
-      .role-title {
-        font-size: 1.4rem;
+
+      .member-name {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Sunrise V Team</h1>
+  <header>Sunrise V | Team</header>
+  <div class="team-container">
 
-  <div class="role-section">
-    <div class="role-title">Projektinhaber</div>
-    <div class="member"><span class="name">Patrick</span><span>SRV | ᓚᘏᗢ</span></div>
-    <div class="member"><span class="name">Lena</span><span>SRV | Caramella</span></div>
-    <div class="member"><span class="name">Christian</span><span>SRV | Krumasse</span></div>
-  </div>
+    <!-- Projektinhaber -->
+    <div class="role-section">
+      <div class="role-title">Projektinhaber</div>
+      <div class="member-grid">
+        <div class="member-card"><div class="member-name">Paddy</div><div class="member-info">Patrick</div></div>
+        <div class="member-card"><div class="member-name">MsCaramella</div><div class="member-info">Lena</div></div>
+        <div class="member-card"><div class="member-name">chrisiv</div><div class="member-info">Christian</div></div>
+      </div>
+    </div>
 
-  <div class="role-section">
-    <div class="role-title">Projektleitung</div>
-    <div class="member"><span class="name">Manuel</span><span>SRV | (｡•́︿•̀｡)</span></div>
-  </div>
+    <!-- Projektleitung -->
+    <div class="role-section">
+      <div class="role-title">Projektleitung</div>
+      <div class="member-grid">
+        <div class="member-card"><div class="member-name">rot_fux</div><div class="member-info">Manuel</div></div>
+      </div>
+    </div>
 
-  <div class="role-section">
-    <div class="role-title">Developer</div>
-    <div class="member"><span class="name">Sven</span><span>SRV | Ted</span></div>
-    <div class="member"><span class="name">Rio</span><span>SRV | Rio</span></div>
-  </div>
+    <!-- Developer -->
+    <div class="role-section">
+      <div class="role-title">Developer</div>
+      <div class="member-grid">
+        <div class="member-card"><div class="member-name">sxvoxes</div><div class="member-info">Sven</div></div>
+        <div class="member-card"><div class="member-name">rayznm</div><div class="member-info">Rio</div></div>
+      </div>
+    </div>
 
-  <div class="role-section">
-    <div class="role-title">Administrator</div>
-    <div class="member"><span class="name">Manuel</span><span>SRV | MrXenovia</span></div>
-    <div class="member"><span class="name">Marian</span><span>SRV | Marianowitsch</span></div>
-    <div class="member"><span class="name">Sören</span><span>SRV | Sebastian Wolf</span></div>
-  </div>
+    <!-- Test Administrator -->
+    <div class="role-section">
+      <div class="role-title">Test Administrator</div>
+      <div class="member-grid">
+        <div class="member-card"><div class="member-name">mr.xenovia</div><div class="member-info">Manuel</div></div>
+        <div class="member-card"><div class="member-name">night6f1fln.dev.exe</div><div class="member-info">Marian</div></div>
+        <div class="member-card"><div class="member-name">manuelmcgarrett</div><div class="member-info">Sören</div></div>
+      </div>
+    </div>
 
-  <div class="role-section">
-    <div class="role-title">Moderator</div>
-    <div class="member"><span class="name">Damien</span><span>SRV | Damien</span></div>
-    <div class="member"><span class="name">Yannick</span><span>SRV | Hooggy</span></div>
-    <div class="member"><span class="name">Elias</span><span>SRV | Elias</span></div>
-    <div class="member"><span class="name">Marc</span><span>SRV | Marc Reeves</span></div>
-  </div>
-
-  <div class="role-section">
-    <div class="role-title">Test Moderator</div>
-    <div class="member"><span class="name">Yannik</span><span>SRV | Yannik/DYNK</span></div>
-    <div class="member"><span class="name">Alex</span><span>SRV | Rapgod93</span></div>
-  </div>
-
-  <div class="role-section">
-    <div class="role-title">Supportleitung</div>
-    <div class="member"><span class="name">Markus</span><span>SRV | Franz W.</span></div>
-  </div>
-
-  <div class="role-section">
-    <div class="role-title">Supporter</div>
-    <div class="member"><span class="name">Angie</span><span>SRV | ᏇᎥꂅᏆꋪuᏁa</span></div>
-    <div class="member"><span class="name">Luca</span><span>SRV | Nino</span></div>
-  </div>
-
-  <div class="role-section">
-    <div class="role-title">Test Supporter</div>
-    <div class="member"><span class="name">Niels</span><span>SRV | Niels Shelby</span></div>
-    <div class="member"><span class="name">Vanessa</span><span>SRV | Lisa</span></div>
-  </div>
-
-  <div class="role-section">
-    <div class="role-title">Guide</div>
-    <div class="member"><span class="name">Tom</span><span>SRV | Tom</span></div>
-  </div>
-
-</body>
-</html>
+    <!-- Moderator -->
+    <div class="role-section">
+      <div class="role-title">Moderator</div>
+      <div class="member-grid">
+        <div class="member-card"><div class="member
