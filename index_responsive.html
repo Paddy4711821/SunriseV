@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise V | Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f0036, #36005d);
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 90%;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 8vw;
+      text-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+      animation: glow 2s infinite alternate;
+      margin: 0;
+    }
+
+    p {
+      font-size: 4vw;
+      margin-top: 1rem;
+    }
+
+    a.button {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 12px 24px;
+      color: #fff;
+      background: #ff00cc;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+      transition: transform 0.2s;
+      font-size: 4vw;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+      }
+      to {
+        text-shadow: 0 0 30px #ff00ff, 0 0 40px #00ffff;
+      }
+    }
+
+    /* Größere Schrift auf Desktop */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      p, a.button {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌅 Sunrise V</h1>
+    <p>Unsere Website geht bald online!</p>
+    <a class="button" href="https://discord.gg/your-link" target="_blank">🔗 Discord beitreten</a>
+  </div>
+</body>
+</html>
